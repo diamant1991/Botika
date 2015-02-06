@@ -424,7 +424,7 @@ nav{
 			color: #f9f8f6;
 			margin: 0 auto;
 		}
-		.group .price{
+		.group .price, .catalog-tovar-block .price{
 			width: 73px;
 			height: 73px;
 			-webkit-border-radius: 35px;
@@ -440,9 +440,12 @@ nav{
 			position: absolute;
 			right: 0;
 			top: 45%;
-		}
-			.group .price span{
+			text-align: center;	}
+			.group .price span, .catalog-tovar-block .price span{
 				font-size: 13px;
+			}
+			.catalog-tovar-block .price{
+				top: 27%;
 			}
 		.group .early{
 			width: 40px;
@@ -457,7 +460,7 @@ nav{
 			font-size: 13px;
 			color: #fff;
 			text-decoration: line-through;
-			padding-top: 10px;
+			padding-top: 12px;
 			z-index: 3;
 			position: absolute;
 			right: -18px;
@@ -479,7 +482,7 @@ nav{
 		margin-top: 15px;
 	}
 
-.content-btn a{
+.content-btn a, .more-info, .in-basket{
 	width: 120px;
 	height: 25px;
 	-webkit-border-radius: 15px;
@@ -492,24 +495,23 @@ nav{
 	font-family: Tahoma,sans-serif;
 	font-size: 13px;
 	color: #f9f8f6;
+	text-align: center;
 	padding-top: 5px;
 	-webkit-transition: all 0.2s ease-out;
 	-o-transition: all 0.2s ease-out;
 	transition: all 0.2s ease-out;
 }
-	.content-btn a:hover{
-		background-color: #de4e59;
-	}
 	.content-btn a:first-child{
 		float: left;
 	}
-	.content-btn a:last-child{
+	.content-btn a:last-child, .in-basket{
 		float: right;
 		background-image: url(../images/in-basket.png);
 		background-repeat: no-repeat;
 		background-position: 85% 40%;
 		text-align: left;
 		padding-left: 18px;
+		background-color: #e24f59;
 	}
 
 .border{
@@ -887,9 +889,6 @@ margin-top: 60px;
 	}
 .select1{
 		cursor: pointer;
-		-webkit-appearance: none;
-		text-indent: 0.01px;
-		text-overflow: '';
 		background: transparent;
 		width: 220px;
 	   height: 27px;
@@ -980,7 +979,7 @@ margin-top: 60px;
 
 .left-sidebar-general{
 	float: left;
-
+	width: 220px;
 }
 .catalog{
 	width: 220px;
@@ -1218,3 +1217,223 @@ margin-top: 60px;
 .left-select{
 	right: 10px;
 }
+.catalog-tovar{
+	margin-top: 10px;
+	padding-top: 45px;
+	background: url(../images/dot-cat.png) repeat-x;
+	overflow: hidden;
+}
+.product{
+	margin-top: 10px;
+	padding-top: 25px;
+	background: url(../images/dot-cat.png) repeat-x;
+	overflow: hidden;
+}
+.catalog-tovar-block{
+	width: 230px;
+	position: relative;
+	float: left;
+	font-family: Tahoma, sans-serif;
+	height: 270px;
+}
+.tovar-info-left{
+	width: 95px;
+	float: left;
+	margin-top: 10px;
+}
+.tovar-info-right{
+	width: 120px;
+	float: right;
+	margin-top: 10px;
+}
+	.tovar-info-right .in-basket{
+		margin-top: 7px;
+	}
+.tovar-info-left p:nth-child(2){
+	float: right;
+	font-size: 13px;
+	color: #e24f59;
+	text-decoration: line-through;
+	position: relative;
+	right: 10px;
+
+}
+.tovar-info-left p:first-child{
+	font-size: 13px;
+}
+	.tovar-info-left p:first-child span{
+		font-size: 15px;
+	}
+
+.tovar-info p{
+	font-size: 13px;
+	text-align: center;
+}
+.catalog-tovar h5{
+	text-align: center;
+}
+.catalog-tovar div:first-child{
+	margin-left: 0;
+}
+.catalog-tovar-block{
+	margin-left: 30px;
+}
+.pagination-pages ul li{
+	float: left;
+}
+	.pagination-pages ul li a{
+		padding: 0 2px;
+	}
+.pagination-pages{
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 30px;
+	background: url(../images/dot-cat.png)repeat-x;
+}
+.pagination-pages ul{
+	display: inline-block;
+	margin: 0 auto;
+	font-family: Tahoma, sans-serif;
+	font-size: 15px;
+}
+	.pagination-pages ul li a{
+		color: #000;
+		text-decoration: underline;
+	}
+	.pagination-pages ul li a:hover{
+		color: #92a643;
+	}
+
+.recently-viewed-block{
+	width: 100%;
+	border: 1px solid #c7c7c7;
+	background: #fff;
+	-webkit-border-radius: 12px;
+	-moz-webkit-border-radius: 12px;
+	-ms-webkit-border-radius: 12px;
+	-o-webkit-border-radius: 12px;
+	border-radius: 12px;
+	padding: 20px 45px 20px 20px;
+}
+	.recently-viewed-block a{
+		font-family: Tahoma, sans-serif;
+		color: #000;
+		font-size: 15px;
+		text-decoration: underline;
+		margin-top: 20px;
+		display: inline-block;
+	}
+		.recently-viewed-block a:first-child{
+			margin-top: 0;
+		}
+		.recently-viewed-block a:hover{
+			color: #92a643;
+		}
+		.recently-viewed-block a span{
+			font-size: 13px;
+			font-style: italic;
+		}
+.recently-viewed{
+	margin-top: 45px;
+}
+	.recently-viewed h3{
+		padding-bottom: 10px;
+	}
+.clothing{
+	background-color: #e24f59 !important;
+}
+.photo-block{
+	width: 355px;
+	float: left;
+}
+.photo-block-img{
+	width: 100%;
+	height: 270px;
+	border: 1px solid #d6d6d6;
+	background-color: #fff;
+	-webkit-border-radius: 20px;
+	-moz-webkit-border-radius: 20px;
+	-ms-webkit-border-radius: 20px;
+	-o-webkit-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+}
+	.photo-block-img img{
+		position: relative;
+		top: 10%;
+	}
+.product-text{
+	float: right;
+	width: 375px;
+	font-family: Tahoma, sans-serif;
+	font-size: 15px;
+	line-height: 1.3;
+}
+	.product-text h5{
+		font-size: 18px;
+		color: #2c2c2c;
+		padding-bottom: 5px;
+	}
+.cost-info{
+	width: 145px;
+	float: right;
+	line-height: 1.1;
+}
+.product-price{
+	margin-top: 30px;
+}
+.cost-info p:first-child{
+	float: right;
+	color: #d85f40;
+	font-size: 15px;
+	text-decoration: line-through;
+}
+.cost-info p:nth-child(3){
+	font-size: 15px;
+	color: #2c2c2c;
+	float: right;
+}
+	.cost-info p:nth-child(3) span{
+		font-size: 26px;
+		color: #2c2c2c;
+	}
+.cost-info .in-basket{
+	margin-top: 10px;
+}
+.product-price select{
+	margin-top: 10px;
+}
+.catalog-tovar-block h5{
+	text-align: center;
+	font-size: 18px;
+	color: #2c2c2c;
+}
+.product-catalog .catalog-tovar-block{
+	margin-top: 25px;
+}
+	.product-catalog div:first-child, .product-catalog div:nth-child(4), .product-catalog div:nth-child(7){
+		margin-left: 0;
+	}
+.product-catalog .tovar-info-left{
+	margin-top: 25px;
+}
+.tabler-container{
+	border: 1px solid #d4d4d4;
+	background-color: #fff;
+	-webkit-border-radius: 15px;
+	-moz-webkit-border-radius: 15px;
+	-ms-webkit-border-radius: 15px;
+	-o-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+	.tabler-container table{
+		width: 595px;
+		font-family: Tahoma,sans-serif;
+		color: #2c2c2c;
+	}
+	.tabler-container table thead{
+		font-size: 15px;
+	}
+	.tabler-container table tbody{
+		font-size: 13px;
+	}
