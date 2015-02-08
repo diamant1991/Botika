@@ -160,7 +160,7 @@
 						<ul class="dropdown">
 							<li class="drop-border">
 								<a href="#" class="drop-main-cat">Обувь для девочек</a>
-								<ul>
+								<ul class="dropdown-child">
 									<li><a href="#">Кроссовки</a></li>
 									<li><a href="#">Кроссовки</a></li>
 									<li><a href="#">Кроссовки</a></li>
@@ -169,7 +169,7 @@
 							</li>
 							<li class="drop-border">
 								<a href="#" class="drop-main-cat">Обувь для мальчиков</a>
-								<ul>
+								<ul class="dropdown-child">
 									<li><a href="#">Кроссовки</a></li>
 									<li><a href="#">Кроссовки</a></li>
 									<li><a href="#">Кроссовки</a></li>
@@ -180,6 +180,26 @@
 					</li>
 					<li>
 						<a href="#" class="main-cat clothing">Одежда</a>
+						<ul class="dropdown">
+							<li class="drop-border">
+								<a href="#" class="drop-main-cat">Обувь для девочек</a>
+								<ul class="dropdown-child">
+									<li><a href="#">Кроссовки</a></li>
+									<li><a href="#">Кроссовки</a></li>
+									<li><a href="#">Кроссовки</a></li>
+									<li><a href="#">Кроссовки</a></li>
+								</ul>
+							</li>
+							<li class="drop-border">
+								<a href="#" class="drop-main-cat">Обувь для мальчиков</a>
+								<ul class="dropdown-child">
+									<li><a href="#">Кроссовки</a></li>
+									<li><a href="#">Кроссовки</a></li>
+									<li><a href="#">Кроссовки</a></li>
+									<li><a href="#">Кроссовки</a></li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<div class="recently-viewed">
@@ -266,13 +286,16 @@
 								<p>Цена: <span>2 130 р.</span></p> 
 								<p>5 400 р.</p>
 								<div class="clear"></div>
-								<select name="select1">
-			         				 <option>Select1</option>
-			         				 <option>Select2</option>
-			          				 <option>Select3</option>
-			          		 		<option>Select4</option>
-			          		 		<option>Select5</option>
-     		 					</select>
+								<div class="select">
+									<a href="javascript:void(0);" class="slct">Кол-во</a>
+									<ul class="drop">
+										<li><a>1 пара</a></li>
+										<li><a>2 коробки</a></li>
+										<li><a>3 пары</a></li>
+										<li><a>4 коробки</a></li>
+									</ul>
+									<input type="hidden" id="select" />
+								</div>
 							</div>
 							<div class="tovar-info-right">
 								<a href="#" class="more-info">Подробнее</a>
@@ -290,13 +313,16 @@
 								<p>Цена: <span>2 130 р.</span></p> 
 								<p>5 400 р.</p>
 								<div class="clear"></div>
-								<select name="select1">
-			         				 <option>Select1</option>
-			         				 <option>Select2</option>
-			          				 <option>Select3</option>
-			          		 		<option>Select4</option>
-			          		 		<option>Select5</option>
-     		 					</select>
+								<div class="select">
+									<a href="javascript:void(0);" class="slct">Кол-во</a>
+									<ul class="drop">
+										<li><a>1 пара</a></li>
+										<li><a>2 коробки</a></li>
+										<li><a>3 пары</a></li>
+										<li><a>4 коробки</a></li>
+									</ul>
+									<input type="hidden" id="select" />
+								</div>
 							</div>
 							<div class="tovar-info-right">
 								<a href="#" class="more-info">Подробнее</a>
@@ -314,13 +340,16 @@
 								<p>Цена: <span>2 130 р.</span></p> 
 								<p>5 400 р.</p>
 								<div class="clear"></div>
-								<select name="select1">
-			         				 <option>Select1</option>
-			         				 <option>Select2</option>
-			          				 <option>Select3</option>
-			          		 		<option>Select4</option>
-			          		 		<option>Select5</option>
-     		 					</select>
+								<div class="select">
+									<a href="javascript:void(0);" class="slct">Кол-во</a>
+									<ul class="drop">
+										<li><a>1 пара</a></li>
+										<li><a>2 коробки</a></li>
+										<li><a>3 пары</a></li>
+										<li><a>4 коробки</a></li>
+									</ul>
+									<input type="hidden" id="select" />
+								</div>
 							</div>
 							<div class="tovar-info-right">
 								<a href="#" class="more-info">Подробнее</a>
@@ -341,13 +370,16 @@
 								<p>Цена: <span>2 130 р.</span></p> 
 								<p>5 400 р.</p>
 								<div class="clear"></div>
-								<select name="select1">
-			         				 <option>Select1</option>
-			         				 <option>Select2</option>
-			          				 <option>Select3</option>
-			          		 		<option>Select4</option>
-			          		 		<option>Select5</option>
-     		 					</select>
+								<div class="select">
+									<a href="javascript:void(0);" class="slct">Кол-во</a>
+									<ul class="drop">
+										<li><a>1 пара</a></li>
+										<li><a>2 коробки</a></li>
+										<li><a>3 пары</a></li>
+										<li><a>4 коробки</a></li>
+									</ul>
+									<input type="hidden" id="select" />
+								</div>
 							</div>
 							<div class="tovar-info-right">
 								<a href="#" class="more-info">Подробнее</a>
@@ -365,13 +397,16 @@
 								<p>Цена: <span>2 130 р.</span></p> 
 								<p>5 400 р.</p>
 								<div class="clear"></div>
-								<select name="select1">
-			         				 <option>Select1</option>
-			         				 <option>Select2</option>
-			          				 <option>Select3</option>
-			          		 		<option>Select4</option>
-			          		 		<option>Select5</option>
-     		 					</select>
+								<div class="select">
+									<a href="javascript:void(0);" class="slct">Кол-во</a>
+									<ul class="drop">
+										<li><a>1 пара</a></li>
+										<li><a>2 коробки</a></li>
+										<li><a>3 пары</a></li>
+										<li><a>4 коробки</a></li>
+									</ul>
+									<input type="hidden" id="select" />
+								</div>
 							</div>
 							<div class="tovar-info-right">
 								<a href="#" class="more-info">Подробнее</a>
@@ -389,13 +424,16 @@
 								<p>Цена: <span>2 130 р.</span></p> 
 								<p>5 400 р.</p>
 								<div class="clear"></div>
-								<select name="select1">
-			         				 <option>Select1</option>
-			         				 <option>Select2</option>
-			          				 <option>Select3</option>
-			          		 		<option>Select4</option>
-			          		 		<option>Select5</option>
-     		 					</select>
+								<div class="select">
+									<a href="javascript:void(0);" class="slct">Кол-во</a>
+									<ul class="drop">
+										<li><a>1 пара</a></li>
+										<li><a>2 коробки</a></li>
+										<li><a>3 пары</a></li>
+										<li><a>4 коробки</a></li>
+									</ul>
+									<input type="hidden" id="select" />
+								</div>
 							</div>
 							<div class="tovar-info-right">
 								<a href="#" class="more-info">Подробнее</a>
@@ -404,6 +442,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="clear"></div>
 				<div class="catalog-tovar">
 					<div class="catalog-tovar-block">
 						<h5>Кроссовки Head</h5>
@@ -415,13 +454,16 @@
 								<p>Цена: <span>2 130 р.</span></p> 
 								<p>5 400 р.</p>
 								<div class="clear"></div>
-								<select name="select1">
-			         				 <option>Select1</option>
-			         				 <option>Select2</option>
-			          				 <option>Select3</option>
-			          		 		<option>Select4</option>
-			          		 		<option>Select5</option>
-     		 					</select>
+								<div class="select">
+									<a href="javascript:void(0);" class="slct">Кол-во</a>
+									<ul class="drop">
+										<li><a>1 пара</a></li>
+										<li><a>2 коробки</a></li>
+										<li><a>3 пары</a></li>
+										<li><a>4 коробки</a></li>
+									</ul>
+									<input type="hidden" id="select" />
+								</div>
 							</div>
 							<div class="tovar-info-right">
 								<a href="#" class="more-info">Подробнее</a>
@@ -439,13 +481,16 @@
 								<p>Цена: <span>2 130 р.</span></p> 
 								<p>5 400 р.</p>
 								<div class="clear"></div>
-								<select name="select1">
-			         				 <option>Select1</option>
-			         				 <option>Select2</option>
-			          				 <option>Select3</option>
-			          		 		<option>Select4</option>
-			          		 		<option>Select5</option>
-     		 					</select>
+								<div class="select">
+									<a href="javascript:void(0);" class="slct">Кол-во</a>
+									<ul class="drop">
+										<li><a>1 пара</a></li>
+										<li><a>2 коробки</a></li>
+										<li><a>3 пары</a></li>
+										<li><a>4 коробки</a></li>
+									</ul>
+									<input type="hidden" id="select" />
+								</div>
 							</div>
 							<div class="tovar-info-right">
 								<a href="#" class="more-info">Подробнее</a>
@@ -463,13 +508,16 @@
 								<p>Цена: <span>2 130 р.</span></p> 
 								<p>5 400 р.</p>
 								<div class="clear"></div>
-								<select name="select1">
-			         				 <option>Select1</option>
-			         				 <option>Select2</option>
-			          				 <option>Select3</option>
-			          		 		<option>Select4</option>
-			          		 		<option>Select5</option>
-     		 					</select>
+								<div class="select">
+									<a href="javascript:void(0);" class="slct">Кол-во</a>
+									<ul class="drop">
+										<li><a>1 пара</a></li>
+										<li><a>2 коробки</a></li>
+										<li><a>3 пары</a></li>
+										<li><a>4 коробки</a></li>
+									</ul>
+									<input type="hidden" id="select" />
+								</div>
 							</div>
 							<div class="tovar-info-right">
 								<a href="#" class="more-info">Подробнее</a>
@@ -483,7 +531,7 @@
 					<ul>
 						<li><a href="#">1</a></li>
 						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
+						<li><a href="#" class="active">3</a></li>
 						<li><a href="#">4</a></li>
 						<li>...</li>
 						<li><a href="#">25</a></li>
@@ -492,7 +540,9 @@
 			</div>
 
 		</div>
+		 
 	</div>
+	<div class="clear"></div>
 	<footer>
 		<div class="footer-header">
 			<div class="footer-header-block">
@@ -648,5 +698,7 @@
       </div><!--Конец формы-->
 
       <script src="js/main.js"></script>
+      <script src="js/filter.js"></script>
+       <script src="js/dropdown.js"></script>
 </body>
 </html>

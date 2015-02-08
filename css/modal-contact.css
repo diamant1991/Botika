@@ -92,6 +92,9 @@
 #form input::-moz-placeholder{color: #fff;}
 #form input::-webkit-input-placeholder{color: #fff;}
 #form input::-ms-input-placeholder{color: #fff;}
+#form textarea::-moz-placeholder{color: #fff;}
+#form textarea::-webkit-input-placeholder{color: #fff;}
+#form textarea::-ms-input-placeholder{color: #fff;}
 
 #form{
     overflow: hidden;
@@ -184,6 +187,18 @@
     -ms-webkit-border-radius: 15px;
     -o-webkit-border-radius: 15px;
     border-radius: 15px;
+}
+.popup_block textarea{
+    -webkit-border-radius: 20px;
+    -moz-webkit-border-radius: 20px;
+    -ms-webkit-border-radius: 20px;
+    -o-webkit-border-radius: 20px;
+    border-radius: 20px;
+    outline: 0;
+    background: #efb354;
+    font-family: Tahoma, sans-Serif;
+    font-size: 15px;
+    color: #fff;
 }
 
 

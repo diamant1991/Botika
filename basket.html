@@ -160,7 +160,7 @@
 						<ul class="dropdown">
 							<li class="drop-border">
 								<a href="#" class="drop-main-cat">Обувь для девочек</a>
-								<ul>
+								<ul class="dropdown-child">
 									<li><a href="#">Кроссовки</a></li>
 									<li><a href="#">Кроссовки</a></li>
 									<li><a href="#">Кроссовки</a></li>
@@ -169,7 +169,7 @@
 							</li>
 							<li class="drop-border">
 								<a href="#" class="drop-main-cat">Обувь для мальчиков</a>
-								<ul>
+								<ul class="dropdown-child">
 									<li><a href="#">Кроссовки</a></li>
 									<li><a href="#">Кроссовки</a></li>
 									<li><a href="#">Кроссовки</a></li>
@@ -180,6 +180,26 @@
 					</li>
 					<li>
 						<a href="#" class="main-cat clothing">Одежда</a>
+						<ul class="dropdown">
+							<li class="drop-border">
+								<a href="#" class="drop-main-cat">Обувь для девочек</a>
+								<ul class="dropdown-child">
+									<li><a href="#">Кроссовки</a></li>
+									<li><a href="#">Кроссовки</a></li>
+									<li><a href="#">Кроссовки</a></li>
+									<li><a href="#">Кроссовки</a></li>
+								</ul>
+							</li>
+							<li class="drop-border">
+								<a href="#" class="drop-main-cat">Обувь для мальчиков</a>
+								<ul class="dropdown-child">
+									<li><a href="#">Кроссовки</a></li>
+									<li><a href="#">Кроссовки</a></li>
+									<li><a href="#">Кроссовки</a></li>
+									<li><a href="#">Кроссовки</a></li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 				</ul>
 				<div class="recently-viewed">
@@ -251,11 +271,16 @@
 							<tr>
 								<td>Кроссовки HEAD можно в две строки или три</td>
 								<td>
-									<select name="">
-										<option value="">select1</option>
-										<option value="">select2</option>
-										<option value="">select3</option>
-									</select>
+									<div class="select">
+										<a href="javascript:void(0);" class="slct">Кол-во</a>
+										<ul class="drop">
+											<li><a>1 пара</a></li>
+											<li><a>2 коробки</a></li>
+											<li><a>3 пары</a></li>
+											<li><a>4 коробки</a></li>
+										</ul>
+										<input type="hidden" id="select" />
+									</div>
 								</td>
 								<td>2 130 руб</td>
 								<td>4 260 руб</td>
@@ -282,11 +307,16 @@
 							<tr>
 								<td>Кроссовки HEAD можно <br> в две строки или три</td>
 								<td>
-									<select name="">
-										<option value="">select1</option>
-										<option value="">select2</option>
-										<option value="">select3</option>
-									</select>
+									<div class="select">
+										<a href="javascript:void(0);" class="slct">Кол-во</a>
+										<ul class="drop">
+											<li><a>1 пара</a></li>
+											<li><a>2 коробки</a></li>
+											<li><a>3 пары</a></li>
+											<li><a>4 коробки</a></li>
+										</ul>
+										<input type="hidden" id="select" />
+									</div>
 								</td>
 								<td>2 130 руб</td>
 								<td>4 260 руб</td>
@@ -313,11 +343,16 @@
 							<tr>
 								<td>Кроссовки HEAD можно <br> в две строки или три</td>
 								<td>
-									<select name="">
-										<option value="">select1</option>
-										<option value="">select2</option>
-										<option value="">select3</option>
-									</select>
+									<div class="select">
+										<a href="javascript:void(0);" class="slct">Кол-во</a>
+										<ul class="drop">
+											<li><a>1 пара</a></li>
+											<li><a>2 коробки</a></li>
+											<li><a>3 пары</a></li>
+											<li><a>4 коробки</a></li>
+										</ul>
+										<input type="hidden" id="select" />
+									</div>
 								</td>
 								<td>2 130 руб</td>
 								<td>4 260 руб</td>
@@ -344,11 +379,16 @@
 							<tr>
 								<td>Кроссовки HEAD можно <br> в две строки или три</td>
 								<td>
-									<select name="">
-										<option value="">select1</option>
-										<option value="">select2</option>
-										<option value="">select3</option>
-									</select>
+									<div class="select">
+										<a href="javascript:void(0);" class="slct">Кол-во</a>
+										<ul class="drop">
+											<li><a>1 пара</a></li>
+											<li><a>2 коробки</a></li>
+											<li><a>3 пары</a></li>
+											<li><a>4 коробки</a></li>
+										</ul>
+										<input type="hidden" id="select" />
+									</div>
 								</td>
 								<td>2 130 руб</td>
 								<td>4 260 руб</td>
@@ -364,7 +404,9 @@
 			</div>
 
 		</div>
+		
 	</div>
+	<div class="clear"></div>
 	<footer>
 		<div class="footer-header">
 			<div class="footer-header-block">
@@ -520,5 +562,7 @@
       </div><!--Конец формы-->
 
       <script src="js/main.js"></script>
+      <script src="js/filter.js"></script>
+       <script src="js/dropdown.js"></script>
 </body>
 </html>
