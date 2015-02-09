@@ -204,8 +204,9 @@
 
 /* конец формы */
 #form textarea{
-    padding: 10px;
+    padding: 12px;
     resize:none;
+    border: 0;
 }
     #popup_contact_2 h3{
         color: #000;
