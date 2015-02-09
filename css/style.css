@@ -28,7 +28,10 @@ header{
 	padding-top: 5px;
 	height: 90px;
 }
-
+.wrapper{
+	height: auto;
+	min-height: 100%;
+}
 
 .logo-container, .footer-logo{
 	width: 230px;
@@ -892,7 +895,8 @@ footer{
 .catalog .main-cat{
 	display: block;
 	width: 100%;
-	background-color: #92a643;
+	/*background-color: #92a643;*/
+	background-color: #de4e59;
 	height: 25px;
 	-webkit-border-radius: 15px;
 	-moz-webkit-border-radius: 15px;
@@ -1252,9 +1256,7 @@ footer{
 	.recently-viewed h3{
 		padding-bottom: 10px;
 	}
-.clothing{
-	background-color: #e24f59 !important;
-}
+
 .photo-block{
 	width: 355px;
 	float: left;
